@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Página</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+    <h1 class="header">Formulário de Cadastro</h1>
+
+    <form method="POST" action="/resultado">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <br><br>
+
+        <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+        <br><br>
+
+        <input type="email" name="email" placeholder="Email" required>
+        <br><br>
+
+        <input type="text" name="numero" placeholder="Número" required>
+        <br><br>
+
+        <button class="button" type="submit">Enviar</button>
+    </form>
+   </div>
+</body>
+</html>

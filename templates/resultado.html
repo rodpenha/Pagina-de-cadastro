@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+    <h1>Dados Recebidos</h1>
+    </div>
+    <p><strong>Nome:</strong> {{ nome }}</p>
+    <p><strong>Sobrenome:</strong> {{ sobrenome }}</p>
+    <p><strong>Email:</strong> {{ email }}</p>
+    <p><strong>Número:</strong> {{ numero }}</p>
+    </div>
+</body>
+</html>
